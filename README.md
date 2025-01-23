@@ -1,4 +1,5 @@
 # Redesign of VTT with more modern style
+Rewrited from tkinter to PtQt6, which has modern style
 # Voice to text
 This program will record everything you say.
 I couldn't upload the exe file right away, so here's the open source code that you can edit.
