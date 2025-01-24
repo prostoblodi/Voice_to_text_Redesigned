@@ -44,7 +44,7 @@ class VoiceToTextApp(QWidget):
 
         # Прямая линия с округленными концами от (100, y) до (400, y)
         self.separator = QFrame(self)
-        self.separator.setGeometry(200, 300, 400, 10)  # Начало на 100, конец на 400
+        self.separator.setGeometry(150, 300, 450, 10)  # Начало на 100, конец на 400
         self.separator.setStyleSheet(
             "background-color: #C8ACD6; border-radius: 5px;"  # Цвет линии с округлыми концами
         )
