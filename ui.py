@@ -1,4 +1,4 @@
-from PyQt6.QtWidgets import QWidget, QLabel, QLineEdit, QPushButton
+from PyQt6.QtWidgets import QWidget, QLabel, QLineEdit, QPushButton, QFrame
 from PyQt6.QtCore import Qt
 from PyQt6.QtGui import QFont
 from functions import save_listening_time, enable_speech_recognition
@@ -11,7 +11,7 @@ class VoiceToTextApp(QWidget):
     def init_ui(self):
         self.setWindowTitle("VTT.py")
         self.setFixedSize(800, 500)
-        self.setStyleSheet("background-color: #1b0f3a; color: #C8ACD6;")  # Цвет фона и текста
+        self.setStyleSheet("background-color: #17153B; color: #C8ACD6;")  # Цвет фона и текста
 
         # Поле ввода и метка
         self.label_title = QLabel("Enter listening time (in seconds):", self)
@@ -24,29 +24,30 @@ class VoiceToTextApp(QWidget):
         self.entry.setFont(QFont("Inria Sans", 16))
         self.entry.setPlaceholderText("Some number...")
         self.entry.setStyleSheet(
-            "background-color: #331b54; color: #C8ACD6; border-radius: 15px; padding: 5px;"
+            "background-color: #2E236C; color: #C8ACD6; border-radius: 15px; padding: 5px;"
         )
 
         # Кнопка сохранения
         self.btn_save = QPushButton("Save listening time", self)
         self.btn_save.setFont(QFont("Inria Sans", 20))
         self.btn_save.setStyleSheet(
-            "background-color: #4c2b8e; color: #C8ACD6; border-radius: 10px;"
+            "background-color: #3D2F8C; color: #C8ACD6; border-radius: 20px;"
         )
         self.btn_save.setGeometry(250, 200, 300, 70)  # Позиция и размер кнопки
         self.btn_save.clicked.connect(lambda: save_listening_time(self.entry))
 
-        # Разделительная линия
-        self.separator = QLabel(self)
-        self.separator.setFixedHeight(10)
-        self.separator.setStyleSheet("background-color: #d7bde2;")
-        self.separator.setGeometry(0, 300, 800, 2)  # Разделительная линия
+        # Прямая линия с округленными концами от (100, y) до (400, y)
+        self.separator = QFrame(self)
+        self.separator.setGeometry(200, 300, 400, 10)  # Начало на 100, конец на 400
+        self.separator.setStyleSheet(
+            "background-color: #C8ACD6; border-radius: 5px;"  # Цвет линии с округлыми концами
+        )
 
         # Кнопка включения распознавания речи
         self.btn_enable = QPushButton("Enable speech recognition", self)
         self.btn_enable.setFont(QFont("Inria Sans", 20))
         self.btn_enable.setStyleSheet(
-            "background-color: #4c2b8e; color: #C8ACD6; border-radius: 10px;"
+            "background-color: #3D2F8C; color: #C8ACD6; border-radius: 20px;"
         )
         self.btn_enable.setGeometry(225, 330, 350, 70)  # Позиция и размер кнопки
         self.btn_enable.clicked.connect(lambda: enable_speech_recognition(self.entry))
