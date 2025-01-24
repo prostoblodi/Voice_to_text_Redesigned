@@ -32,7 +32,7 @@ def start_speech_recognition(entry: QLineEdit):
             print(f"Listening for {duration} seconds...")
             audio = r.record(source, duration=duration)
             print("Recognizing speech...")
-            text = r.recognize_google(audio, language="en")
+            text = r.recognize_google(audio, language="ru")
             print(f"Recognized text: {text}")
     except ValueError:
         print("Please enter a valid number for listening time.")

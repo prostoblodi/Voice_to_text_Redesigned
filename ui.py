@@ -6,6 +6,12 @@ from functions import save_listening_time, enable_speech_recognition
 class VoiceToTextApp(QWidget):
     def __init__(self):
         super().__init__()
+        self.label_instruction = None
+        self.btn_enable = None
+        self.separator = None
+        self.btn_save = None
+        self.entry = None
+        self.label_title = None
         self.init_ui()
 
     def init_ui(self):
@@ -24,7 +30,7 @@ class VoiceToTextApp(QWidget):
         self.entry.setFont(QFont("Inria Sans", 16))
         self.entry.setPlaceholderText("Some number...")
         self.entry.setStyleSheet(
-            "background-color: #2E236C; color: #C8ACD6; border-radius: 15px; padding: 5px;"
+            "background-color: #2E236C; color: #C8ACD6; border-radius: 15px; padding: 15px;"
         )
 
         # Кнопка сохранения
