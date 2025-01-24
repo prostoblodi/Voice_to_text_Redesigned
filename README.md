@@ -17,15 +17,9 @@ First step we need to download all libaries:
 
 `pip install SpeechRecognition`
 
-`pip install keyboard`
+`pip install keyboard`                                                                                                                                                                                              
 
-_If you want sounds(on/off)_                                                                                                                                                                                          
-
-`pip install pyglet`                                                                                                                                                                                                  
-
-Then just run:                                                                                                                                                                                                        
-_If you want with sounds:_ run VTT_n0f.py                                                                                                                                                                             
-_If you want without sounds:_ run VTT.py
+Then just run main.py.                                                                                                                                                                                                    
 
 ![изображение](https://github.com/user-attachments/assets/9ff499c7-9ae7-4a09-b8b3-4e13a21c0f84)
 
