@@ -1,5 +1,6 @@
 # Redesign of VTT with more modern style
 Rewrited from tkinter to PtQt6, which has modern style
+
 # Voice to text
 This program will record everything you say.
 I couldn't upload the exe file right away, so here's the open source code that you can edit.
@@ -8,7 +9,9 @@ It's written in Python. You can turn it into an exe file using the auto py exe l
 
 
 # How to use
-First step we need to download all libaries:                                                                                                                                                                          
+First step we need to download all libaries:   
+
+`pip install PyQt6`
 
 `pip install pyAudio`
 
@@ -24,6 +27,5 @@ Then just run:
 _If you want with sounds:_ run VTT_n0f.py                                                                                                                                                                             
 _If you want without sounds:_ run VTT.py
 
-
-![изображение](https://github.com/user-attachments/assets/86f0cc33-8ff7-4fac-a407-41ed1935d4c8)
+![изображение](https://github.com/user-attachments/assets/9ff499c7-9ae7-4a09-b8b3-4e13a21c0f84)
 
