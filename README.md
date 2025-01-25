@@ -19,7 +19,7 @@ First step we need to download all libaries:
 
 `pip install keyboard`                                                                                                                                                                                              
 
-Then just run main.py.                                                                                                                                                                                                    
+## Then just run main.py.                                                                                                                                                                                                    
 
 ![изображение](https://github.com/user-attachments/assets/9ff499c7-9ae7-4a09-b8b3-4e13a21c0f84)
 
