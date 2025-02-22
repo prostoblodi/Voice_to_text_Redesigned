@@ -9,7 +9,7 @@ It's written in Python. You can turn it into an exe file using the auto py exe l
 
 
 # How to use
-First step we need to download all libaries:   
+First step we need to download all libraries:   
 
 `pip install PyQt6`
 
